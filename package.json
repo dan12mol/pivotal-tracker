@@ -1,0 +1,21 @@
+{
+  "name": "pivotal-tracker",
+  "main": "./lib/pivotal-tracker",
+  "version": "0.0.0",
+  "author": {
+    "name": "Dan Moldovan",
+    "email": "danmol18@gmail.com"
+  },
+  "description": "Atom package for Pivotal Tracker integration",
+  "activationCommands": {
+    "atom-workspace": "pivotal-tracker:my-stories"
+  },
+  "repository": "https://github.com/atom/pivotal-tracker",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+    "pivotaltracker": "file:../../../../tmp/npm-23195-09777b51/1432413078524-0.7621456803753972/020812941991d3e3c017efc526f26080a002d122"
+  }
+}
