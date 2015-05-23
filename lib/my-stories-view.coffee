@@ -12,6 +12,13 @@ module.exports =
       # project selector
       @projectSelect = document.createElement('select')
       @projectSelect.classList.add('form-control')
+      @projectSelect.setAttribute('id', 'projectSelect')
+
+      # default option
+      defaultOption = document.createElement('option')
+      defaultOption.value = ''
+      defaultOption.innerHTML = 'Select a project'
+      @projectSelect.appendChild(defaultOption)
 
       # append elements to @rootElement
       @rootElement.appendChild(projectLabel)

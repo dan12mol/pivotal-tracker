@@ -22,4 +22,16 @@ module.exports =
           option.innerHTML = project.name
           elements.projectSelect.appendChild option
 
+      elements.projectSelect.onchange = selectedProject
+
       atom.workspace.addRightPanel({item: root})
+
+selectedProject = ->
+  projectId = document.getElementById('projectSelect').value
+
+  if projectId isnt ''
+    client.project(projectId).stories.all (err, stories) ->
+      if err?
+        atom.notifications.addError err.message
+      else
+        debugger
